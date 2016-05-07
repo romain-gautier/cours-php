@@ -1,8 +1,10 @@
 <?php
     class Personnage{
-        private $vie = 80;
-        private $atk = 20;
-        private $nom;
+        protected $vie = 80;
+        protected $atk = 20;
+        protected $nom;
+
+        const MAX_VIE = 100;
 
         public function getNom() {
             return $this->nom;
@@ -34,9 +36,9 @@
 
         public function regenerer($vie = null) {
             if (is_null($vie)) {
-                $this->vie = 100;
+                $this->vie = self::MAX_VIE;
             } else {
-                $this->vie = $this->vie + $vie;
+                $this->vie += $vie;
             }
         }
 

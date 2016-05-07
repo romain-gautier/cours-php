@@ -1,8 +1,18 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+
 <?php
 
-require 'Form.php';
+require 'class/Autoloader.php';
+Autoloader::register();
 
-$form = new Form($_POST);
+
+$form = new BootstrapForm($_POST);
 
 ?>
 
@@ -14,4 +24,7 @@ $form = new Form($_POST);
     ?>
 </form>
 
+
+</body>
+</html>
 

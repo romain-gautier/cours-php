@@ -11,7 +11,7 @@ class Form {
      * @var array données utilisées par le formulaire
      */
 
-    private $data;
+    protected $data;
 
     /**
      * @var string tag utilisé pour entourer les champs
@@ -34,14 +34,19 @@ class Form {
      * @return string
      */
 
-    private function surround($html) {
+    protected function surround($html) {
         return "<{$this->surround}>$html</{$this->surround}>";
     }
 
-    private function getValue($index) {
+    protected function getValue($index) {
         return isset($this->data[$index]) ? $this->data[$index] : null;
     }
 
+    /**
+     * @param $name
+     * @return string
+     */
+    
     public function input($name) {
          return $this->surround(
              '<input type="text" name="'. $name . '" value="' . $this->getValue($name) . '">');
