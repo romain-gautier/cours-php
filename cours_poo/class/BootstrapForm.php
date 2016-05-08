@@ -1,6 +1,6 @@
 <?php
 
-class BootstrapForm extends Form {
+class BootstrapForm extends \Tutoriel\Form {
 
 
     /**

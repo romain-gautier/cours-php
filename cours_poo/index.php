@@ -9,7 +9,7 @@
 <?php
 
 require 'class/Autoloader.php';
-Autoloader::register();
+\Tutoriel\Autoloader::register();
 
 
 $form = new BootstrapForm($_POST);
