@@ -35,8 +35,13 @@
       <file leaf-file-name="Form.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/class/Form.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="30">
               <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+=======
+            <state relative-caret-position="165">
+              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+>>>>>>> Stashed changes
               <folding>
                 <element signature="e#28#95#0#PHP" expanded="false" />
               </folding>
@@ -214,18 +219,29 @@
       <updated>1462444382871</updated>
       <workItem from="1462444384414" duration="3689000" />
       <workItem from="1462457284514" duration="98000" />
+<<<<<<< Updated upstream
       <workItem from="1462457399395" duration="3093000" />
       <workItem from="1462528730384" duration="227000" />
       <workItem from="1462537505778" duration="3286000" />
       <workItem from="1462564822397" duration="2221000" />
+=======
+      <workItem from="1462457399395" duration="3925000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="12614000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1282" y="0" width="1278" height="1440" extended-state="0" />
+=======
+    <option name="totallyTimeSpent" value="7712000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1366" height="741" extended-state="6" />
+>>>>>>> Stashed changes
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2746479" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -467,8 +483,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/class/Form.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="30">
           <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+=======
+        <state relative-caret-position="165">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+>>>>>>> Stashed changes
           <folding>
             <element signature="e#28#95#0#PHP" expanded="false" />
           </folding>

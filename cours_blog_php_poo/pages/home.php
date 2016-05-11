@@ -1,3 +1,4 @@
-<h1>Je suis la home</h1>
+<?php
 
-<p><a href="index.php?p=single">Single</a></p>
+$pdo = new PDO('mysql:host=localhost;dbname=projet_blog;charset=utf8', 'root', 'root');
+
