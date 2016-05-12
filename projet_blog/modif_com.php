@@ -7,7 +7,6 @@
     </head>
 
     <?php
-
         try {
           $bdd = new PDO('mysql:host=localhost;dbname=projet_blog;charset=utf8', 'root', 'root'); }
         catch(Exception $e) {
@@ -23,9 +22,6 @@
       $recup = $bdd->prepare("SELECT id, auteur_com, contenu_com FROM commentaires WHERE id = :id" );
       $recup->execute(array("id" => $_GET["id"]));
       $donnees = $recup->fetch();
-
-
-
      ?>
 
     <body class="container">

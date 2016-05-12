@@ -33,4 +33,17 @@ class Commentaire
         }
     }
 
+    public function modifCom()
+    {
+        if (!empty($_POST["nomCommentaire"]) && !empty($_POST["contenuCommentaire"]))
+        {
+            $connection = new Database();
+            $req = $connection->connection();
+
+            $modif = $req->prepare("UPDATE commentaires SET auteur_com = ?, contenu_com = ? WHERE id = ?");
+            $modif->execute(array($_POST["nomCommentaire"], $_POST["contenuCommentaire"], $_GET["id"]));
+            echo 'Message modifié';
+        }
+    }
+
 }
