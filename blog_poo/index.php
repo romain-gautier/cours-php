@@ -47,5 +47,4 @@ require 'app/Database.php';
 </body>
 </html>
 
-<?php
-?>
+
