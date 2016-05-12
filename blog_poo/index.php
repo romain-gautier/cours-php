@@ -18,12 +18,9 @@ require 'app/Database.php';
 </p>
 
 <?php
-/* try {
-    $bdd = new PDO('mysql:host=localhost;dbname=projet_blog;charset=utf8', 'root', 'root'); }
-catch(Exception $e) {
-    die('Erreur : '.$e->getMessage()); } */
-    $connection = new Database();
-    $reponse = $connection->query('SELECT id, titre_article, contenu_article, auteur_article, DATE_FORMAT(date_ajout, \'[%d/%m/%Y %H:%i:%s] \') AS date_ajout_fr FROM articles ORDER BY ID DESC');
+    $connect = new Database();
+    $req = $connect->connection();
+    $reponse = $req->query('SELECT id, titre_article, contenu_article, auteur_article, DATE_FORMAT(date_ajout, \'[%d/%m/%Y %H:%i:%s] \') AS date_ajout_fr FROM articles ORDER BY ID DESC');
 ?>
 <table class="table table-hover">
     <?php while ($donnees = $reponse->fetch()) { ?>
@@ -35,10 +32,10 @@ catch(Exception $e) {
             <td class="text-left"> <?php echo "<a href='modif.php?id=" . htmlspecialchars($donnees["id"]) . "'> Modifier </a>"; ?> </td>
             <td class="text-left"> <?php echo "<a href='supprimer.php?id=" . htmlspecialchars($donnees["id"]) . "'> Supprimer </a>"; ?> </td>
             <td class="text-left"> <?php echo "<a href='post.php?id=" . htmlspecialchars($donnees["id"]) . "'> Afficher </a>"; ?> </td>
-            <td> <?php $nbCom = $bdd->prepare('SELECT COUNT(id_article) FROM commentaires where id_article = ?');
+            <td> <?php /* $nbCom = $bdd->prepare('SELECT COUNT(id_article) FROM commentaires where id_article = ?');
                 $nbCom->execute([$donnees['id']]);
                 while ($data = $nbCom->fetch()) {
-                    echo $data; } ?> </td>
+                    echo $data; } */?> </td>
         </tr>
     <?php  }
 

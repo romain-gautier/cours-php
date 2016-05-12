@@ -1,5 +1,5 @@
 <?php
-require '../app/Article.php';
+require 'app/Article.php';
 ?>
 
 <!DOCTYPE html>
@@ -33,6 +33,11 @@ require '../app/Article.php';
         <input type="text" class="form-control" id="auteurArticle" name="auteur" placeholder="Le contenu de l'article">
     </div>
     <button type="submit" class="btn btn-success">Envoyer</button> <a class="btn btn-primary" href="index.php" role="button">Retour à l'accueil</a>
+
+    <?php
+    $article = new Article();
+    $insertArticle = $article->insertArticle();
+    ?>
 
 </body>
 </html>
