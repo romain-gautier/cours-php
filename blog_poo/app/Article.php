@@ -46,7 +46,7 @@ class Article
         }
     }
 
-    public function afficheArticle()
+    public function tableArticle()
     {
         $connect = new Database();
         $req = $connect->connection();
@@ -63,8 +63,11 @@ class Article
             <td class="text-left"> <?php echo "<a href='supprimer.php?id=" . htmlspecialchars($donnees["id"]) . "'> Supprimer </a>"; ?> </td>
             <td class="text-left"> <?php echo "<a href='post.php?id=" . htmlspecialchars($donnees["id"]) . "'> Afficher </a>"; ?> </td>
         </tr>
-        </table>
     <?php  }
+        $reponse->closeCursor();
+        ?>
+        </table>
+    <?php
     
     }
 
