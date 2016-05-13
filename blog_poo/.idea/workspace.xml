@@ -22,7 +22,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
@@ -35,14 +35,15 @@
       <file leaf-file-name="Article.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Article.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+            <state relative-caret-position="645">
+              <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
               <folding>
-                <marker date="1463122313000" expanded="true" signature="410:514" placeholder="INSERT INTO articles... " />
-                <marker date="1463122313000" expanded="true" signature="911:1002" placeholder="UPDATE artic... " />
-                <marker date="1463122313000" expanded="true" signature="1363:1410" placeholder="DELETE FROM " />
-                <marker date="1463122313000" expanded="true" signature="1507:1542" placeholder="DELETE FROM " />
-                <marker date="1463122313000" expanded="true" signature="1765:1921" placeholder="SELECT id, t... articles" />
+                <marker date="1463123784000" expanded="true" signature="410:514" placeholder="INSERT INTO articles... " />
+                <marker date="1463123784000" expanded="true" signature="911:1002" placeholder="UPDATE artic... " />
+                <marker date="1463123784000" expanded="true" signature="1363:1410" placeholder="DELETE FROM " />
+                <marker date="1463123784000" expanded="true" signature="1507:1542" placeholder="DELETE FROM " />
+                <marker date="1463123784000" expanded="true" signature="1771:1857" placeholder="SELECT id, t... articles" />
+                <marker date="1463123784000" expanded="true" signature="2409:2565" placeholder="SELECT id, t... articles" />
               </folding>
             </state>
           </provider>
@@ -51,7 +52,7 @@
       <file leaf-file-name="modif_com.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modif_com.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
+            <state relative-caret-position="310">
               <caret line="31" column="73" selection-start-line="31" selection-start-column="73" selection-end-line="31" selection-end-column="73" />
               <folding>
                 <marker date="1463065777000" expanded="true" signature="515:582" placeholder="SELECT id, a... commentaires" />
@@ -73,12 +74,13 @@
       <file leaf-file-name="Commentaire.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Commentaire.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
+            <state relative-caret-position="555">
+              <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
               <folding>
-                <marker date="1463065558000" expanded="true" signature="433:528" placeholder="INSERT INTO commentaires... " />
-                <marker date="1463065558000" expanded="true" signature="847:886" placeholder="DELETE FROM " />
-                <marker date="1463065558000" expanded="true" signature="1220:1288" placeholder="UPDATE comme... " />
+                <marker date="1463124095000" expanded="true" signature="433:528" placeholder="INSERT INTO commentaires... " />
+                <marker date="1463124095000" expanded="true" signature="808:985" placeholder="SELECT id, a... commentaires" />
+                <marker date="1463124095000" expanded="true" signature="1757:1796" placeholder="DELETE FROM " />
+                <marker date="1463124095000" expanded="true" signature="2130:2198" placeholder="UPDATE comme... " />
               </folding>
             </state>
           </provider>
@@ -87,17 +89,14 @@
       <file leaf-file-name="post.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/post.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
-              <folding>
-                <marker date="1463063544000" expanded="true" signature="469:555" placeholder="SELECT id, t... articles" />
-                <marker date="1463063544000" expanded="true" signature="1746:1923" placeholder="SELECT id, a... commentaires" />
-              </folding>
+            <state relative-caret-position="615">
+              <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ajout.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ajout.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ajout.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="570">
@@ -146,14 +145,14 @@
         <option value="$PROJECT_DIR$/ajout.php" />
         <option value="$PROJECT_DIR$/supprimer.php" />
         <option value="$PROJECT_DIR$/modif.php" />
-        <option value="$PROJECT_DIR$/post.php" />
         <option value="$PROJECT_DIR$/supr_com.php" />
-        <option value="$PROJECT_DIR$/app/Commentaire.php" />
         <option value="$PROJECT_DIR$/modif_com.php" />
         <option value="$PROJECT_DIR$/pages/template.php" />
         <option value="$PROJECT_DIR$/pages/home.php" />
-        <option value="$PROJECT_DIR$/app/Article.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/app/Article.php" />
+        <option value="$PROJECT_DIR$/app/Commentaire.php" />
+        <option value="$PROJECT_DIR$/post.php" />
       </list>
     </option>
   </component>
@@ -300,12 +299,12 @@
       <workItem from="1463056835973" duration="8253000" />
       <workItem from="1463070058418" duration="1361000" />
       <workItem from="1463071865801" duration="1990000" />
-      <workItem from="1463122140531" duration="248000" />
+      <workItem from="1463122140531" duration="973000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16992000" />
+    <option name="totallyTimeSpent" value="17717000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1366" height="741" extended-state="6" />
@@ -374,9 +373,10 @@
         <state relative-caret-position="660">
           <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
           <folding>
-            <marker date="1463065558000" expanded="true" signature="433:528" placeholder="INSERT INTO commentaires... " />
-            <marker date="1463065558000" expanded="true" signature="847:886" placeholder="DELETE FROM " />
-            <marker date="1463065558000" expanded="true" signature="1220:1288" placeholder="UPDATE comme... " />
+            <marker date="1463124095000" expanded="true" signature="433:528" placeholder="INSERT INTO commentaires... " />
+            <marker date="1463124095000" expanded="true" signature="808:985" placeholder="SELECT id, a... commentaires" />
+            <marker date="1463124095000" expanded="true" signature="1757:1796" placeholder="DELETE FROM " />
+            <marker date="1463124095000" expanded="true" signature="2130:2198" placeholder="UPDATE comme... " />
           </folding>
         </state>
       </provider>
@@ -385,10 +385,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
-          <folding>
-            <marker date="1463063544000" expanded="true" signature="469:555" placeholder="SELECT id, t... articles" />
-            <marker date="1463063544000" expanded="true" signature="1746:1923" placeholder="SELECT id, a... commentaires" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -455,9 +452,10 @@
         <state relative-caret-position="660">
           <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
           <folding>
-            <marker date="1463065558000" expanded="true" signature="433:528" placeholder="INSERT INTO commentaires... " />
-            <marker date="1463065558000" expanded="true" signature="847:886" placeholder="DELETE FROM " />
-            <marker date="1463065558000" expanded="true" signature="1220:1288" placeholder="UPDATE comme... " />
+            <marker date="1463124095000" expanded="true" signature="433:528" placeholder="INSERT INTO commentaires... " />
+            <marker date="1463124095000" expanded="true" signature="808:985" placeholder="SELECT id, a... commentaires" />
+            <marker date="1463124095000" expanded="true" signature="1757:1796" placeholder="DELETE FROM " />
+            <marker date="1463124095000" expanded="true" signature="2130:2198" placeholder="UPDATE comme... " />
           </folding>
         </state>
       </provider>
@@ -466,10 +464,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
-          <folding>
-            <marker date="1463063544000" expanded="true" signature="469:555" placeholder="SELECT id, t... articles" />
-            <marker date="1463063544000" expanded="true" signature="1746:1923" placeholder="SELECT id, a... commentaires" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -527,9 +522,10 @@
         <state relative-caret-position="660">
           <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
           <folding>
-            <marker date="1463065558000" expanded="true" signature="433:528" placeholder="INSERT INTO commentaires... " />
-            <marker date="1463065558000" expanded="true" signature="847:886" placeholder="DELETE FROM " />
-            <marker date="1463065558000" expanded="true" signature="1220:1288" placeholder="UPDATE comme... " />
+            <marker date="1463124095000" expanded="true" signature="433:528" placeholder="INSERT INTO commentaires... " />
+            <marker date="1463124095000" expanded="true" signature="808:985" placeholder="SELECT id, a... commentaires" />
+            <marker date="1463124095000" expanded="true" signature="1757:1796" placeholder="DELETE FROM " />
+            <marker date="1463124095000" expanded="true" signature="2130:2198" placeholder="UPDATE comme... " />
           </folding>
         </state>
       </provider>
@@ -538,10 +534,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
-          <folding>
-            <marker date="1463063544000" expanded="true" signature="469:555" placeholder="SELECT id, t... articles" />
-            <marker date="1463063544000" expanded="true" signature="1746:1923" placeholder="SELECT id, a... commentaires" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -565,11 +558,12 @@
         <state relative-caret-position="15">
           <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
           <folding>
-            <marker date="1463122313000" expanded="true" signature="410:514" placeholder="INSERT INTO articles... " />
-            <marker date="1463122313000" expanded="true" signature="911:1002" placeholder="UPDATE artic... " />
-            <marker date="1463122313000" expanded="true" signature="1363:1410" placeholder="DELETE FROM " />
-            <marker date="1463122313000" expanded="true" signature="1507:1542" placeholder="DELETE FROM " />
-            <marker date="1463122313000" expanded="true" signature="1765:1921" placeholder="SELECT id, t... articles" />
+            <marker date="1463123784000" expanded="true" signature="410:514" placeholder="INSERT INTO articles... " />
+            <marker date="1463123784000" expanded="true" signature="911:1002" placeholder="UPDATE artic... " />
+            <marker date="1463123784000" expanded="true" signature="1363:1410" placeholder="DELETE FROM " />
+            <marker date="1463123784000" expanded="true" signature="1507:1542" placeholder="DELETE FROM " />
+            <marker date="1463123784000" expanded="true" signature="1771:1857" placeholder="SELECT id, t... articles" />
+            <marker date="1463123784000" expanded="true" signature="2409:2565" placeholder="SELECT id, t... articles" />
           </folding>
         </state>
       </provider>
@@ -578,6 +572,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding>
+            <marker date="1463062967000" expanded="true" signature="509:595" placeholder="SELECT id, t... articles" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -618,11 +615,12 @@
         <state relative-caret-position="15">
           <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
           <folding>
-            <marker date="1463122313000" expanded="true" signature="410:514" placeholder="INSERT INTO articles... " />
-            <marker date="1463122313000" expanded="true" signature="911:1002" placeholder="UPDATE artic... " />
-            <marker date="1463122313000" expanded="true" signature="1363:1410" placeholder="DELETE FROM " />
-            <marker date="1463122313000" expanded="true" signature="1507:1542" placeholder="DELETE FROM " />
-            <marker date="1463122313000" expanded="true" signature="1765:1921" placeholder="SELECT id, t... articles" />
+            <marker date="1463123784000" expanded="true" signature="410:514" placeholder="INSERT INTO articles... " />
+            <marker date="1463123784000" expanded="true" signature="911:1002" placeholder="UPDATE artic... " />
+            <marker date="1463123784000" expanded="true" signature="1363:1410" placeholder="DELETE FROM " />
+            <marker date="1463123784000" expanded="true" signature="1507:1542" placeholder="DELETE FROM " />
+            <marker date="1463123784000" expanded="true" signature="1771:1857" placeholder="SELECT id, t... articles" />
+            <marker date="1463123784000" expanded="true" signature="2409:2565" placeholder="SELECT id, t... articles" />
           </folding>
         </state>
       </provider>
@@ -660,6 +658,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding>
+            <marker date="1463062967000" expanded="true" signature="509:595" placeholder="SELECT id, t... articles" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -694,16 +695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modif_com.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="73" selection-start-line="31" selection-start-column="73" selection-end-line="31" selection-end-column="73" />
-          <folding>
-            <marker date="1463065777000" expanded="true" signature="515:582" placeholder="SELECT id, a... commentaires" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -712,26 +703,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modif_com.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="31" column="73" selection-start-line="31" selection-start-column="73" selection-end-line="31" selection-end-column="73" />
+          <folding>
+            <marker date="1463065777000" expanded="true" signature="515:582" placeholder="SELECT id, a... commentaires" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
+          <folding>
+            <marker date="1463123784000" expanded="true" signature="410:514" placeholder="INSERT INTO articles... " />
+            <marker date="1463123784000" expanded="true" signature="911:1002" placeholder="UPDATE artic... " />
+            <marker date="1463123784000" expanded="true" signature="1363:1410" placeholder="DELETE FROM " />
+            <marker date="1463123784000" expanded="true" signature="1507:1542" placeholder="DELETE FROM " />
+            <marker date="1463123784000" expanded="true" signature="1771:1857" placeholder="SELECT id, t... articles" />
+            <marker date="1463123784000" expanded="true" signature="2409:2565" placeholder="SELECT id, t... articles" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Commentaire.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
+        <state relative-caret-position="555">
+          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
           <folding>
-            <marker date="1463065558000" expanded="true" signature="433:528" placeholder="INSERT INTO commentaires... " />
-            <marker date="1463065558000" expanded="true" signature="847:886" placeholder="DELETE FROM " />
-            <marker date="1463065558000" expanded="true" signature="1220:1288" placeholder="UPDATE comme... " />
+            <marker date="1463124095000" expanded="true" signature="433:528" placeholder="INSERT INTO commentaires... " />
+            <marker date="1463124095000" expanded="true" signature="808:985" placeholder="SELECT id, a... commentaires" />
+            <marker date="1463124095000" expanded="true" signature="1757:1796" placeholder="DELETE FROM " />
+            <marker date="1463124095000" expanded="true" signature="2130:2198" placeholder="UPDATE comme... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/post.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
-          <folding>
-            <marker date="1463063544000" expanded="true" signature="469:555" placeholder="SELECT id, t... articles" />
-            <marker date="1463063544000" expanded="true" signature="1746:1923" placeholder="SELECT id, a... commentaires" />
-          </folding>
+        <state relative-caret-position="615">
+          <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -739,28 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
-          <folding>
-            <marker date="1463122313000" expanded="true" signature="410:514" placeholder="INSERT INTO articles... " />
-            <marker date="1463122313000" expanded="true" signature="911:1002" placeholder="UPDATE artic... " />
-            <marker date="1463122313000" expanded="true" signature="1363:1410" placeholder="DELETE FROM " />
-            <marker date="1463122313000" expanded="true" signature="1507:1542" placeholder="DELETE FROM " />
-            <marker date="1463122313000" expanded="true" signature="1765:1921" placeholder="SELECT id, t... articles" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
           <folding />
         </state>
       </provider>
