@@ -33,7 +33,7 @@ class Commentaire
             De : <?php echo $donnees_com['auteur_com']; ?> <br>
             Le : <?php echo $donnees_com['date_com_fr']; ?> <br>
             Commentaire : <?php echo $donnees_com['contenu_com']; ?> <br>
-            <a href="../modif_com.php?id=<?php echo $donnees_com['id']; ?>">Modifier le commentaire</a> <a href="../supr_com.php?id=<?php echo $donnees_com['id']; ?>">Supprimer le commentaire</a> <br>
+            <a href="modif_com.php?id=<?php echo $donnees_com['id']; ?>">Modifier le commentaire</a> <a href="supr_com.php?id=<?php echo $donnees_com['id']; ?>">Supprimer le commentaire</a> <br>
         <?php }
         $recup_com->closeCursor();
     }
