@@ -1,4 +1,16 @@
 <?php
 
-$pdo = new PDO('mysql:host=localhost;dbname=projet_blog;charset=utf8', 'root', 'root');
+foreach ($db->query('SELECT * FROM articles', 'App\Table\Article') as $post): ?>
+
+    <h2><a href="<?= $post->url ?>"><?= $post->titre; ?></a></h2>
+
+    <p>
+        <?= $post->extrait; ?>
+    </p>
+
+
+
+    <?php endforeach; ?>
+
+
 
