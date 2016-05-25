@@ -45,35 +45,7 @@ class Article
             $del->execute(array("id" => $_GET["id"]));
         }
     }
-
-    public function showArticle()
-    {
-        $connection = new Database();
-        $bdd = $connection->connection();
-
-        $recup = $bdd->prepare("SELECT id, titre_article, contenu_article, auteur_article FROM articles WHERE id = :id" );
-        $recup->execute(array("id" => $_GET["id"]));
-        $donnees = $recup->fetch();
-
-        ?>
-
-        <body class="container">
-
-    <h2 class="text-center"> <?php echo $donnees['titre_article']; ?> </h2>
-
-    <br>
-
-    <p>
-        <?php echo $donnees['contenu_article']; ?>
-    </p>
-
-    <br>
-
-    <p>
-        Auteur : <?php echo $donnees['auteur_article']; ?>
-    </p> <?php
-        
-    }
+    
     
 
 }
