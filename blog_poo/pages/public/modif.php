@@ -1,6 +1,6 @@
 <?php
-
-require 'app/Article.php';
+session_start();
+require '../../app/Article.php';
 
 ?>
 
@@ -48,7 +48,7 @@ $donnees = $recup->fetch();
         <label for="auteurArticle">Auteur</label>
         <input type="text" class="form-control" id="auteurArticle" name="auteur" value="<?php echo htmlspecialchars($donnees["auteur_article"]); ?>" >
         </div>
-        <button type="submit" class="btn btn-success">Mettre à jour</button> <a class="btn btn-primary" href="index.php" role="button">Retour à l'accueil</a>
+        <button type="submit" class="btn btn-success">Mettre à jour</button> <a class="btn btn-primary" href="accueil.php" role="button">Retour à l'accueil</a>
 
 </body>
 </html>

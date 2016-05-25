@@ -1,7 +1,7 @@
 <?php
 session_start();
-header('Location: login.php');
-require 'app/User.php';
+header('Location: ../index.php');
+require '../app/User.php';
 
 $deco = new User();
 $logoff = $deco->deco();

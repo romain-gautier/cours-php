@@ -1,7 +1,5 @@
-<?php
-session_start();
-require 'app/Article.php';
-?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,101 +10,21 @@ require 'app/Article.php';
 
 <body class="container">
 
-<h2 class="text-center">Bienvenue sur mon blog</h2>
-<p>
-    Vous trouverez ci-dessous les derniers articles postés sur le blog. <br>
-    <a class="btn btn-primary center-block" href="ajout.php" role="button">Ajouter un nouvel article</a>
-</p>
+    <form action="pages/logon.php" method="post">
 
-<?php
-$connect = new Database();
-$req = $connect->connection();
-$reponse = $req->query('SELECT id, titre_article, contenu_article, auteur_article, DATE_FORMAT(date_ajout, \'[%d/%m/%Y %H:%i:%s] \') AS date_ajout_fr FROM articles ORDER BY ID DESC');
-?>
+        <div class="form-group">
+            <label for="loginMembre">Nom d'utilisateur</label>
+            <input type="text" class="form-control" id="loginMembre" name="loginMembre" placeholder="Votre nom d'utilisateur">
+        </div>
+        <div class="form-group">
+            <label for="passMembre">Votre nom</label>
+            <input type="password" class="form-control" id="passMembre" name="passMembre" placeholder="Votre mot de passe">
+        </div>
+        <button type="submit" class="btn btn-success">Connection</button> <a class="btn btn-primary" href="pages/public/accueil.php" role="button">Retour à l'accueil</a>
 
-<?php if($_SESSION['loginMembre'] === 'Romain') {
-    ?>
-<table class="table table-hover">
-    <tr>
-        <th>Date</th>
-        <th>Titre</th>
-        <th>Contenu</th>
-        <th>Auteur</th>
-        <th></th>
-        <th></th>
-        <th></th>
-    </tr>
-    <?php while ($donnees = $reponse->fetch()) { ?>
-        <tr>
-            <td class="text-left"> <?php echo htmlspecialchars($donnees['date_ajout_fr']); ?> </td>
-            <td class="text-left"> <?php echo htmlspecialchars($donnees['titre_article']); ?> </td>
-            <td class="text-left"> <?php echo htmlspecialchars($donnees['contenu_article']); ?> </td>
-            <td class="text-left"> <?php echo htmlspecialchars($donnees['auteur_article']); ?> </td>
-            <td class="text-left"> <?php echo "<a href='post.php?id=" . htmlspecialchars($donnees["id"]) . "'> Afficher </a>"; ?> </td>
-            <td class="text-left"> <?php echo "<a href='modif.php?id=" . htmlspecialchars($donnees["id"]) . "'> Modifier </a>"; ?> </td>
-            <td class="text-left"> <?php echo "<a href='supprimer.php?id=" . htmlspecialchars($donnees["id"]) . "'> Supprimer </a>"; ?> </td>
-        </tr>
-    <?php  }
-    $reponse->closeCursor();
-    ?>
-</table>
+    </form>
 
-<?php } elseif ($_SESSION['loginMembre'] === 'Karim') {
-    ?>
-<table class="table table-hover">
-    <tr>
-        <th>Date</th>
-        <th>Titre</th>
-        <th>Contenu</th>
-        <th>Auteur</th>
-        <th></th>
-        <th></th>
-        <th></th>
-    </tr>
-    <?php while ($donnees = $reponse->fetch()) { ?>
-        <tr>
-            <td class="text-left"> <?php echo htmlspecialchars($donnees['date_ajout_fr']); ?> </td>
-            <td class="text-left"> <?php echo htmlspecialchars($donnees['titre_article']); ?> </td>
-            <td class="text-left"> <?php echo htmlspecialchars($donnees['contenu_article']); ?> </td>
-            <td class="text-left"> <?php echo htmlspecialchars($donnees['auteur_article']); ?> </td>
-            <td class="text-left"> <?php echo "<a href='post.php?id=" . htmlspecialchars($donnees["id"]) . "'> Afficher </a>"; ?> </td>
-            <td class="text-left"> <?php echo "<a href='modif.php?id=" . htmlspecialchars($donnees["id"]) . "'> Modifier </a>"; ?> </td>
-        </tr>
-    <?php  }
-    $reponse->closeCursor();
-    ?>
-</table>
-<?php } else {
-    ?>
-<table class="table table-hover">
-    <tr>
-        <th>Date</th>
-        <th>Titre</th>
-        <th>Contenu</th>
-        <th>Auteur</th>
-        <th></th>
-        <th></th>
-        <th></th>
-    </tr>
-    <?php while ($donnees = $reponse->fetch()) { ?>
-        <tr>
-            <td class="text-left"> <?php echo htmlspecialchars($donnees['date_ajout_fr']); ?> </td>
-            <td class="text-left"> <?php echo htmlspecialchars($donnees['titre_article']); ?> </td>
-            <td class="text-left"> <?php echo htmlspecialchars($donnees['contenu_article']); ?> </td>
-            <td class="text-left"> <?php echo htmlspecialchars($donnees['auteur_article']); ?> </td>
-            <td class="text-left"> <?php echo "<a href='post.php?id=" . htmlspecialchars($donnees["id"]) . "'> Afficher </a>"; ?> </td>
-        </tr>
-    <?php  }
-    $reponse->closeCursor();
-    ?>
-</table>
-<?php
-
-} ?>
-
-<a href="deco.php">Déconnection</a>
+    <a href="pages/deco.php">déconnection</a>
 
 </body>
 </html>
-
-

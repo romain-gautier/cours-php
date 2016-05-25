@@ -1,5 +1,6 @@
 <?php
-require 'app/Commentaire.php';
+require '../../app/Commentaire.php';
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +39,7 @@ $donnees = $recup->fetch();
         <label for="contenuCommentaire">Votre commentaire</label>
         <input type="text" class="form-control" id="contenuCommentaire" name="contenuCommentaire" value="<?php echo htmlspecialchars($donnees["contenu_com"]); ?>">
     </div>
-    <button type="submit" class="btn btn-success">Ajouter un commentaire</button> <a class="btn btn-primary" href="index.php" role="button">Retour à l'accueil</a>
+    <button type="submit" class="btn btn-success">Ajouter un commentaire</button> <a class="btn btn-primary" href="accueil.php" role="button">Retour à l'accueil</a>
 </p>
 
 

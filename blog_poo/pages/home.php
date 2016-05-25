@@ -9,7 +9,7 @@ if (isset($_GET['p'])) {
 ob_start();
 
 if ($p === 'index') {
-    require '../index.php';
+    require '../accueil.php';
 } elseif ($p === 'ajout') {
     require '../ajout.php';
 }

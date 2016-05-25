@@ -1,6 +1,7 @@
 <?php
-require 'app/Article.php';
-require 'app/Commentaire.php';
+require '../../app/Article.php';
+require '../../app/Commentaire.php';
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +28,7 @@ require 'app/Commentaire.php';
         <label for="contenuCommentaire">Votre commentaire</label>
         <input type="text" class="form-control" id="contenuCommentaire" name="contenuCommentaire" placeholder="Votre commentaire">
     </div>
-    <button type="submit" class="btn btn-success">Ajouter un commentaire</button> <a class="btn btn-primary" href="index.php" role="button">Retour à l'accueil</a>
+    <button type="submit" class="btn btn-success">Ajouter un commentaire</button> <a class="btn btn-primary" href="accueil.php" role="button">Retour à l'accueil</a>
 
     <?php
         $commentaire = new Commentaire();

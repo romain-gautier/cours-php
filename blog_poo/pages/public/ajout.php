@@ -1,5 +1,6 @@
 <?php
-require 'app/Article.php';
+session_start();
+require '../../app/Article.php';
 ?>
 
 <!DOCTYPE html>
@@ -30,9 +31,9 @@ require 'app/Article.php';
     </div>
     <div class="form-group">
         <label for="auteurArticle">Auteur</label>
-        <input type="text" class="form-control" id="auteurArticle" name="auteur" placeholder="Le contenu de l'article">
+        <input type="text" class="form-control" id="auteurArticle" name="auteur" value="<?php echo htmlspecialchars($_SESSION['loginMembre']); ?>">
     </div>
-    <button type="submit" class="btn btn-success">Envoyer</button> <a class="btn btn-primary" href="index.php" role="button">Retour à l'accueil</a>
+    <button type="submit" class="btn btn-success">Envoyer</button> <a class="btn btn-primary" href="accueil.php" role="button">Retour à l'accueil</a>
 
     <?php
     $article = new Article();
