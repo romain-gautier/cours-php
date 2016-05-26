@@ -1,8 +1,10 @@
 <?php
+
 if ($_SESSION['loginMembre'] === 'Romain') {
-    include 'admin/accueil.php';
+    include 'admin/article.php';
 } elseif ($_SESSION['loginMembre'] === 'Karim') {
-    require 'membre/accueil.php';
+    require 'membre/article.php';
 } elseif ($_SESSION['loginMembre'] === 'Guest') {
-    require 'guest/accueil.php';
+    require 'guest/article.php';
 }
+

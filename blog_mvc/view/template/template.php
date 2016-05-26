@@ -7,3 +7,8 @@
 </head>
 
 <body class="container">
+
+<?= $content ?>
+
+</body>
+</html>

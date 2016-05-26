@@ -27,11 +27,11 @@ class User {
                 $_SESSION['loginMembre'] = $loginMembre;
 
                 if ($loginMembre === 'Romain') {
-                    header('location:public/accueil.php');
+                    header('location:../index.php?p=accueil');
                 } elseif ($loginMembre === 'Karim') {
-                    header('location:public/accueil.php');
+                    header('location:../index.php?p=accueil');
                 } elseif ($loginMembre === 'Guest') {
-                    header('location:public/accueil.php');
+                    header('location:../index.php?p=accueil');
                 }
 
             }
