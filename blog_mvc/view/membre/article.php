@@ -24,7 +24,7 @@ $donnees = $recup->fetch();
 
 <hr>
 
-<form action="post.php?id=<?php echo $_GET['id']; ?>" method="post">
+<form action="index.php?p=article&id=<?php echo $_GET['id']; ?>" method="post">
     <div class="form-group">
         <label for="nomCommentaire">Votre nom</label>
         <input type="text" class="form-control" id="nomCommentaire" name="nomCommentaire" placeholder="Votre nom">

@@ -21,7 +21,7 @@ $donnees = $recup->fetch();
     Tous les champs sont obligatoires. <br>
 </p>
 
-<form method="post" action=<?php echo "'modif.php?id=" . $_GET["id"] . "'"?>>
+<form method="post" action=<?php echo "'index.php?p=modif&id=" . $_GET["id"] . "'"?>>
     <div class="form-group">
         <label for="titreArticle">Titre de l'article</label>
         <input type="text" class="form-control" id="titreArticle" name="titre" value="<?php echo htmlspecialchars($donnees["titre_article"]); ?>" >
@@ -34,4 +34,4 @@ $donnees = $recup->fetch();
         <label for="auteurArticle">Auteur</label>
         <input type="text" class="form-control" id="auteurArticle" name="auteur" value="<?php echo htmlspecialchars($donnees["auteur_article"]); ?>" >
     </div>
-    <button type="submit" class="btn btn-success">Mettre à jour</button> <a class="btn btn-primary" href="accueil.php" role="button">Retour à l'accueil</a>
+    <button type="submit" class="btn btn-success">Mettre à jour</button> <a class="btn btn-primary" href="index.php?p=accueil" role="button">Retour à l'accueil</a>

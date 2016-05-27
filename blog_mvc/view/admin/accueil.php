@@ -27,7 +27,7 @@ $reponse = $req->query('SELECT id, titre_article, contenu_article, auteur_articl
                 <td class="text-left"> <?php echo htmlspecialchars($donnees['auteur_article']); ?> </td>
                 <td class="text-left"> <?php echo "<a href='index.php?p=article&id=" . htmlspecialchars($donnees["id"]) . "'> Afficher </a>"; ?> </td>
                 <td class="text-left"> <?php echo "<a href='index.php?p=modif&id=" . htmlspecialchars($donnees["id"]) . "'> Modifier </a>"; ?> </td>
-                <td class="text-left"> <?php echo "<a href='../supprimer.php?id=" . htmlspecialchars($donnees["id"]) . "'> Supprimer </a>"; ?> </td>
+                <td class="text-left"> <?php echo "<a href='model/supprimer.php?id=" . htmlspecialchars($donnees["id"]) . "'> Supprimer </a>"; ?> </td>
             </tr>
         <?php }
         $reponse->closeCursor();
