@@ -17,15 +17,15 @@ ob_start();
 if ($p === 'login') {
     require 'view/login.php';
 } elseif ($p === 'accueil') {
-    require 'view/accueil.php';
+    require 'controller/accueil.php';
 } elseif ($p === 'article') {
-    require 'view/article.php';
+    require 'controller/article.php';
 } elseif ($p === 'modif') {
     require 'view/admin/modif_article.php';
 } elseif ($p === 'modif_com') {
     require 'view/admin/modif_com.php';
 } elseif ($p === 'ajout') {
-    require 'view/ajout.php';
+    require 'controller/ajout.php';
 }
 
 $content = ob_get_clean();
