@@ -1,15 +1,4 @@
-<?php
 
-$commentaire = new Commentaire();
-$modifCom = $commentaire->modifCom();
-
-$connection = new Database();
-$req = $connection->connection();
-
-$recup = $req->prepare("SELECT id, auteur_com, contenu_com FROM commentaires WHERE id = :id" );
-$recup->execute(array("id" => $_GET["id"]));
-$donnees = $recup->fetch();
-?>
 
 <body class="container">
 

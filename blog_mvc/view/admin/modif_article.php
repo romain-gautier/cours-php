@@ -1,16 +1,4 @@
-<?php
 
-$article = new Article();
-$modifArticle = $article->modifArticle();
-
-$connection = new Database();
-$req = $connection->connection();
-
-$recup = $req->prepare("SELECT id, titre_article, contenu_article, auteur_article FROM articles WHERE id = :id" );
-$recup->execute(array("id" => $_GET["id"]));
-$donnees = $recup->fetch();
-
-?>
 
 <body class="container">
 

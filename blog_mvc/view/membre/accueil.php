@@ -3,12 +3,6 @@
     Vous trouverez ci-dessous les derniers articles postés sur le blog. <br>
     <a class="btn btn-primary center-block" href="index.php?p=ajout" role="button">Ajouter un nouvel article</a>
 </p>
-
-<?php
-$connect = new Database();
-$req = $connect->connection();
-$reponse = $req->query('SELECT id, titre_article, contenu_article, auteur_article, DATE_FORMAT(date_ajout, \'[%d/%m/%Y %H:%i:%s] \') AS date_ajout_fr FROM articles ORDER BY ID DESC');
-?>
 <table class="table table-hover">
     <tr>
         <th>Date</th>
